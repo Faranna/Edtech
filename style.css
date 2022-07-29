@@ -1,7 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
 .first_banner {
     background-image: url(images/cover/cover-1.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
+}
+
+.navbar-brand {
+    color: #4A4A4A;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.carousel-item img {
+    filter: brightness(50%);
+}
+
+.carousel-item h5 {
+    top: 20px !important;
+    font-size: 68px;
+    font-weight: 600;
+}
+
+.carousel-item p {
+    color: #F4F4F4;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.discover h2 {
+    color: #1D1D1D;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.discover p {
+    color: #777777;
+    font-size: 16px;
+}
+
+
+
+.boxes h1 {
+    font-size: 25px;
+    color: #4A4A4A;
+}
+
+.boxes p {
+    color: #777777;
+    font-size: 16px;
+}
+
+.boxes h4 {
+    color: #289BDE;
+    font-size: 18px;
+}
+
+.fundamental {
+    margin-top: 10px;
+    margin-left: 20px;
 }

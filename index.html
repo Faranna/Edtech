@@ -10,13 +10,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
     <title>Hello, world!</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-success d-flex justify-content-evenly">
-            <div class="container-fluid ">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around my-3">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">Pro Edu</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -26,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Courses</a>
@@ -46,13 +52,12 @@
 
 
                     </ul>
-                    <button type="button" class="btn btn-primary">Primary</button>
-
+                    <button type="button" class="btn btn-lg btn-outline-primary">Register</button>
                 </div>
             </div>
         </nav>
         <!-- first banner -->
-        <section class="first_banner">
+        <!-- <section class="first_banner my-3">
             <div class="text-center d-flex flex-column">
                 <h1>Get Started Digital Learning
 
@@ -61,21 +66,61 @@
                     looking at its layout.</p>
                 <div class="btn btn-success">Get Started</div>
             </div>
-        </section>
+        </section> -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Get Started Digital Learning</h5>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                        <div class="btn btn-info btn-lg">Get Started</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
-    <section class="discover container">
+    <!-- boxes -->
+    <section class="discover  container my-5">
         <div class="text-center">
-            <h2>Discover Our Popular Courses</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            <h2 class="my-3">Discover Our Popular Courses</h2>
+            <p class="my-3">It is a long established fact that a reader will be distracted by the readable content of a
+                page when
                 looking at its layout.</p>
         </div>
         <div>
-            <div class="row">
+            <div class="row boxes  my-5">
                 <div class="col-md-6 d-flex border">
                     <div>
                         <img src="images/course/course-1.png" class="img-fluid" alt="">
                     </div>
-                    <div>
+                    <div class="fundamental">
                         <h1>Fundamental Of UI/UX Design</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
                         <h4>price : $20 </h4>
@@ -83,43 +128,21 @@
                 </div>
                 <div class="col-md-6 d-flex border">
                     <div>
-                        <img src="images/course/course-1.png" class="img-fluid" alt="">
+                        <img src="images/course/course-2.png" class="img-fluid" alt="">
                     </div>
-                    <div>
-                        <h1>Fundamental Of UI/UX Design</h1>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                        <h4>price : $20 </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 d-flex border">
-                    <div>
-                        <img src="images/course/course-1.png" class="img-fluid" alt="">
-                    </div>
-                    <div>
-                        <h1>Fundamental Of UI/UX Design</h1>
-                        <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
-                        <h4>price : $20 </h4>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex border">
-                    <div>
-                        <img src="images/course/course-1.png" class="img-fluid" alt="">
-                    </div>
-                    <div>
+                    <div class="fundamental">
                         <h1>Fundamental Of UI/UX Design</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
                         <h4>price : $20 </h4>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row boxes my-5">
                 <div class="col-md-6 d-flex border">
                     <div>
-                        <img src="images/course/course-1.png" class="img-fluid" alt="">
+                        <img src="images/course/course-3.png" class="img-fluid" alt="">
                     </div>
-                    <div>
+                    <div class="fundamental">
                         <h1>Fundamental Of UI/UX Design</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
                         <h4>price : $20 </h4>
@@ -127,9 +150,31 @@
                 </div>
                 <div class="col-md-6 d-flex border">
                     <div>
-                        <img src="images/course/course-1.png" class="img-fluid" alt="">
+                        <img src="images/course/course-4.png" class="img-fluid" alt="">
                     </div>
+                    <div class="fundamental">
+                        <h1>Fundamental Of UI/UX Design</h1>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                        <h4>price : $20 </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row boxes my-5">
+                <div class="col-md-6 d-flex border">
                     <div>
+                        <img src="images/course/course-5.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="fundamental">
+                        <h1>Fundamental Of UI/UX Design</h1>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                        <h4>price : $20 </h4>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex border">
+                    <div>
+                        <img src="images/course/course-6.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="fundamental">
                         <h1>Fundamental Of UI/UX Design</h1>
                         <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
                         <h4>price : $20 </h4>
@@ -137,11 +182,6 @@
                 </div>
             </div>
             <div class="btn btn-info text-center">See more courses</div>
-
-
-
-
-
         </div>
     </section>
     <!-- explore -->
@@ -302,13 +342,13 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
+                <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                         What is semantic tag?
                     </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">The HTML semantics refers to the tags that provide meaning to an HTML
                         page rather than just presentation. It makes HTML more comprehensible by better defining the
@@ -318,6 +358,47 @@
         </div>
 
     </section>
+    <!-- trustedd -->
+    <section>
+        <h1 class="text-center my-5">Trusted by over 800+ companies</h1>
+        <div class="row container-fluid my-5">
+            <div class="col-md-2">
+                <img src="images/company/company-1.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="images/company/company-2.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="images/company/company-3.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="images/company/company-4.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="images/company/company-5.png" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="images/company/company-6.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container text-center">
+            <h1>Pro Edu</h1>
+            <p>Office 41, Zawaya Buildin, Ghala Muscat,
+                Sultanate of Oman</p>
+            <p>Privacy Ploicy | Terms of use</p>
+            <ul class="d-flex justify-content-evenly">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-solid fa-music"></i></li>
+            </ul>
+
+        </div>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
